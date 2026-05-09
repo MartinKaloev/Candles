@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160">
+  <style>
+    .fl { animation: flick 2.4s ease-in-out infinite; transform-origin: 50px 58px; }
+    @keyframes flick {
+      0%,100% { transform: scaleX(1) rotate(-2deg); opacity: .88; }
+      25%      { transform: scaleX(.94) rotate(2deg); opacity: .93; }
+      50%      { transform: scaleX(1.06) rotate(-1deg); opacity: .97; }
+      75%      { transform: scaleX(.97) rotate(2.5deg); opacity: .90; }
+    }
+  </style>
+  <!-- flame -->
+  <g class="fl">
+    <ellipse cx="50" cy="22" rx="16" ry="22" fill="#ff9500" opacity=".9"/>
+    <ellipse cx="50" cy="28" rx="10" ry="14" fill="#ffd000" opacity=".85"/>
+    <ellipse cx="50" cy="34" rx="6"  ry="9"  fill="#fff8e7" opacity=".75"/>
+  </g>
+  <!-- wick -->
+  <line x1="50" y1="46" x2="50" y2="56" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- wax pool -->
+  <ellipse cx="50" cy="57" rx="26" ry="8" fill="#e2e2e2"/>
+  <!-- body -->
+  <rect x="24" y="54" width="52" height="100" rx="6" fill="#c8c8c8"/>
+  <!-- highlight -->
+  <rect x="30" y="60" width="9" height="85" rx="4.5" fill="white" opacity=".14"/>
+</svg>

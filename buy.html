@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — ILONA CANDLES</title>
+  <link rel="stylesheet" href="candle.css">
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('ilona-theme')||'bordeaux')</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="home.html">
+    <svg class="candle-icon" viewBox="0 0 28 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="candle-flame"><ellipse cx="14" cy="6" rx="5" ry="7" class="candle-flame-outer"/><ellipse cx="14" cy="8" rx="3" ry="4.5" class="candle-flame-mid"/><ellipse cx="14" cy="10" rx="1.8" ry="2.8" class="candle-flame-inner"/></g><line x1="14" y1="14" x2="14" y2="17" class="candle-wick" stroke-width="1.2" stroke-linecap="round"/><ellipse cx="14" cy="17.5" rx="7" ry="2.5" class="candle-wax-top"/><rect x="7" y="17" width="14" height="26" rx="2" class="candle-body-rect"/></svg>
+    ILONA CANDLES
+  </a>
+  <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="buy.html" data-page="buy"><svg class="candle-icon" viewBox="0 0 28 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="candle-flame"><ellipse cx="14" cy="6" rx="5" ry="7" class="candle-flame-outer"/><ellipse cx="14" cy="8" rx="3" ry="4.5" class="candle-flame-mid"/><ellipse cx="14" cy="10" rx="1.8" ry="2.8" class="candle-flame-inner"/></g><line x1="14" y1="14" x2="14" y2="17" class="candle-wick" stroke-width="1.2" stroke-linecap="round"/><ellipse cx="14" cy="17.5" rx="7" ry="2.5" class="candle-wax-top"/><rect x="7" y="17" width="14" height="26" rx="2" class="candle-body-rect"/></svg><span>BUY</span></a></li>
+    <li><a href="home.html#about" data-page="about"><svg class="candle-icon" viewBox="0 0 28 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="candle-flame"><ellipse cx="14" cy="6" rx="5" ry="7" class="candle-flame-outer"/><ellipse cx="14" cy="8" rx="3" ry="4.5" class="candle-flame-mid"/><ellipse cx="14" cy="10" rx="1.8" ry="2.8" class="candle-flame-inner"/></g><line x1="14" y1="14" x2="14" y2="17" class="candle-wick" stroke-width="1.2" stroke-linecap="round"/><ellipse cx="14" cy="17.5" rx="7" ry="2.5" class="candle-wax-top"/><rect x="7" y="17" width="14" height="26" rx="2" class="candle-body-rect"/></svg><span>ABOUT</span></a></li>
+    <li><a href="gallery.html" data-page="gallery"><svg class="candle-icon" viewBox="0 0 28 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="candle-flame"><ellipse cx="14" cy="6" rx="5" ry="7" class="candle-flame-outer"/><ellipse cx="14" cy="8" rx="3" ry="4.5" class="candle-flame-mid"/><ellipse cx="14" cy="10" rx="1.8" ry="2.8" class="candle-flame-inner"/></g><line x1="14" y1="14" x2="14" y2="17" class="candle-wick" stroke-width="1.2" stroke-linecap="round"/><ellipse cx="14" cy="17.5" rx="7" ry="2.5" class="candle-wax-top"/><rect x="7" y="17" width="14" height="26" rx="2" class="candle-body-rect"/></svg><span>GALLERY</span></a></li>
+    <li><a href="contact.html" data-page="contact"><svg class="candle-icon" viewBox="0 0 28 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="candle-flame"><ellipse cx="14" cy="6" rx="5" ry="7" class="candle-flame-outer"/><ellipse cx="14" cy="8" rx="3" ry="4.5" class="candle-flame-mid"/><ellipse cx="14" cy="10" rx="1.8" ry="2.8" class="candle-flame-inner"/></g><line x1="14" y1="14" x2="14" y2="17" class="candle-wick" stroke-width="1.2" stroke-linecap="round"/><ellipse cx="14" cy="17.5" rx="7" ry="2.5" class="candle-wax-top"/><rect x="7" y="17" width="14" height="26" rx="2" class="candle-body-rect"/></svg><span>CONTACT</span></a></li>
+    <li><button class="theme-toggle">◆ B & W</button></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="page-header">
+    <svg class="candle-icon page-candle" viewBox="0 0 28 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="candle-flame"><ellipse cx="14" cy="6" rx="5" ry="7" class="candle-flame-outer"/><ellipse cx="14" cy="8" rx="3" ry="4.5" class="candle-flame-mid"/><ellipse cx="14" cy="10" rx="1.8" ry="2.8" class="candle-flame-inner"/></g><line x1="14" y1="14" x2="14" y2="17" class="candle-wick" stroke-width="1.2" stroke-linecap="round"/><ellipse cx="14" cy="17.5" rx="7" ry="2.5" class="candle-wax-top"/><rect x="7" y="17" width="14" height="26" rx="2" class="candle-body-rect"/></svg>
+    <h1>SHOP</h1>
+    <div class="divider"></div>
+  </div>
+
+  <section class="section">
+    <!-- Products filled from wax.ini by candle.js -->
+    <div id="products-grid" class="products-grid"></div>
+
+    <div class="etsy-banner">
+      <h2>Find Us on Etsy</h2>
+      <p>All products are handmade to order. Visit our Etsy shop to see the full range, read reviews, and place your order.</p>
+      <a href="#" id="etsy-link" target="_blank" rel="noopener" class="btn">VISIT ETSY SHOP</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>ILONA CANDLES &copy; 2025</p>
+  <p>Handmade with love &middot; Available on Etsy</p>
+</footer>
+
+<script src="candle.js"></script>
+</body>
+</html>
